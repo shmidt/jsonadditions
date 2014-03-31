@@ -6,6 +6,10 @@ JSON useful categories
 ```objc
 NSArray *array = [NSArray arrayWithBundleJSONFilename:@"filename.json"];
 NSDictionary *dict = [NSDictionary dictionaryWithBundleJSONFilename:@"filename.json"];
-array.jsonString;
-array.jsonStringPrettyPrinted;
+
+NSString *jsonString = array.jsonString;
+NSString *jsonString = array.jsonStringPrettyPrinted;
+
+NSString *jsonString = dict.jsonString;
+NSString *jsonString = dict.jsonStringPrettyPrinted;
 ```
