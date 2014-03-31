@@ -9,4 +9,6 @@
 
 @interface NSArray (JSONAdditions)
 + (NSArray *)arrayWithBundleJSONFilename:(NSString*)fileLocation;
+- (NSString *)jsonString;
+- (NSString *)jsonStringPrettyPrinted;
 @end

@@ -24,4 +24,24 @@
     
     return result;
 }
+- (NSString *)jsonString{
+    __autoreleasing NSError *error = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self
+                                                       options:0 error:&error];
+    if (error) {
+        NSLog(@"%@", error.localizedDescription);
+        return nil;
+    };
+    return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+}
+- (NSString *)jsonStringPrettyPrinted{
+    __autoreleasing NSError *error = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self
+                                                       options:NSJSONWritingPrettyPrinted error:&error];
+    if (error) {
+        NSLog(@"%@", error.localizedDescription);
+        return nil;
+    };
+    return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+}
 @end
