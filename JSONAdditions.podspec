@@ -21,7 +21,7 @@ NSString *jsonString = dict.jsonStringPrettyPrinted;
   s.social_media_url   = "http://twitter.com/mind_detonator"
   s.platform     = :ios, "5.0"
   s.source       = { :git => "https://github.com/shmidt/jsonadditions.git", :tag => "0.0.1" }
-  s.source_files = 'jsonadditions.{h,m}'
+  s.source_files  = "**/*.{h,m}"
   s.requires_arc = true
 
 end
