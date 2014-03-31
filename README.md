@@ -1,0 +1,4 @@
+jsonadditions
+=============
+
+JSON useful categories
