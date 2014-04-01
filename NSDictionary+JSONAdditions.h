@@ -10,4 +10,6 @@
 
 @interface NSDictionary (JSONAdditions)
 + (NSDictionary*)dictionaryWithBundleJSONFilename:(NSString*)fileLocation;
+- (NSString *)jsonString;
+- (NSString *)jsonStringPrettyPrinted;
 @end
